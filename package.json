@@ -2,6 +2,9 @@
   "name": "sequencer-splash-page",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "20"
+  },
   "dependencies": {
     "framer-motion": "^12.38.0",
     "react": "^18.2.0",
