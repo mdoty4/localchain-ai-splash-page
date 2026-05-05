@@ -4,9 +4,9 @@ export function HowItWorks() {
   const steps = [
     {
       number: '01',
-      title: 'Design the Flow',
+      title: 'Create Nodes',
       description:
-        'Drag agents onto the canvas. Connect them. Define what each one does — the prompt, the input, the output. Build your pipeline like you are drawing an architecture diagram.',
+        'Drag nodes onto the canvas and define each step — set prompts, configure inputs and outputs. Build your AI pipeline visually, like drawing an architecture diagram.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-accent">
           <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" strokeWidth="1.5" />
@@ -17,9 +17,22 @@ export function HowItWorks() {
     },
     {
       number: '02',
-      title: 'Assign the Models',
+      title: 'Connect Steps',
       description:
-        'Pick the right model for each stage. Use Claude for reasoning, GPT for generation, a local model for sensitive code — or mix and match. Each node runs the model you assign it.',
+        'Link nodes together to create your workflow. Draw connections between steps to define how data flows through your sequence, building a visual pipeline that tells the story of your process.',
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-teal">
+          <circle cx="6" cy="12" r="2.5" stroke="currentColor" strokeWidth="1.5" />
+          <circle cx="18" cy="12" r="2.5" stroke="currentColor" strokeWidth="1.5" />
+          <path d="M8.5 12H15.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+      ),
+    },
+    {
+      number: '03',
+      title: 'Choose Models & Tools',
+      description:
+        'Assign the right model or tool to each node. Use Claude for reasoning, GPT for generation, a local model for sensitive code, or plug in APIs and scripts — mix and match freely.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-teal">
           <circle cx="12" cy="6" r="3" stroke="currentColor" strokeWidth="1.5" />
@@ -31,10 +44,10 @@ export function HowItWorks() {
       ),
     },
     {
-      number: '03',
-      title: 'Run the Sequence',
+      number: '04',
+      title: 'Run, Inspect, Repeat',
       description:
-        'Hit play. Watch your pipeline execute node by node. Track progress, inspect outputs at each stage, and iterate on the flow — not just the prompt. Repeatable. Reproducible. Yours.',
+        'Hit play and watch your pipeline execute node by node. Inspect intermediate outputs, catch issues early, tweak the flow, and run again. Repeatable, reproducible, fully yours.',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-teal">
           <polygon points="8,4 20,12 8,20" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
@@ -53,15 +66,15 @@ export function HowItWorks() {
         {/* Section Header with Scroll Reveal */}
         <ScrollReveal>
           <header className="section-header">
-            <h2 id="how-it-works-heading">From Idea to Output in Three Steps</h2>
+            <h2 id="how-it-works-heading">Create. Connect. Run. Repeat.</h2>
             <p className="max-w-xl mx-auto">
-              Design. Assign. Run. One prompt gets you an answer. A sequence gets you a system that works on its own — so you don't have to.
+              Build AI pipelines visually: create nodes, wire them together, pick the best models and tools for each step, then run and iterate — all on a single canvas.
             </p>
           </header>
         </ScrollReveal>
 
         {/* Steps with Staggered Reveal */}
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 relative">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative">
           {/* Connector Line (desktop only) - positioned absolutely so it doesn't take grid space */}
           <div className="hidden md:block absolute top-12 left-0 right-0 z-0" aria-hidden="true">
             <ScrollReveal delay={0.3}>

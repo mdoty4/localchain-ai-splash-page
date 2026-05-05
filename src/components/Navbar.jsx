@@ -4,7 +4,7 @@ const navLinks = [
   { label: 'Features', href: '#features' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'Demo', href: '#tutorials' },
-  { label: 'GitHub', href: 'https://github.com/mdoty4/sequencer' },
+  { label: 'GitHub', href: 'https://github.com/mdoty4/localchainai' },
 ];
 
 export function Navbar() {
@@ -30,10 +30,10 @@ export function Navbar() {
         <a href="/" className="flex items-center gap-2 text-text-primary font-bold text-card-md tracking-tight">
           <img
             src="/logo.png"
-            alt="Sequencer"
+            alt="LocalChain AI"
             className="h-8 w-auto"
           />
-          Sequencer
+          LocalChain AI
         </a>
 
         {/* Desktop Links */}

@@ -4,7 +4,7 @@ export function Footer() {
   const socialLinks = [
     {
       label: 'GitHub',
-      href: 'https://github.com/mdoty4/sequencer',
+      href: 'https://github.com/mdoty4/localchainai',
       icon: (
         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
           <path d="M10 0C4.47 0 0 4.47 0 10c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48
@@ -51,13 +51,13 @@ export function Footer() {
             <a href="/" className="flex items-center gap-2 text-text-primary font-bold text-card-md tracking-tight mb-3">
               <img
                 src="/logo.png"
-                alt="Sequencer"
+                alt="LocalChain AI"
                 className="h-8 w-auto"
               />
-              Sequencer
+              LocalChain AI
             </a>
             <p className="text-body-sm text-text-secondary max-w-xs">
-              Local-First AI Agent Workflow Orchestrator
+              Autonomous AI Agents, Running Locally
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export function Footer() {
             <a href="#installation" className="text-body-sm text-text-secondary hover:text-text-primary transition-colors">
               Installation
             </a>
-            <a href="https://github.com/mdoty4/sequencer" className="text-body-sm text-text-secondary hover:text-text-primary transition-colors">
+            <a href="https://github.com/mdoty4/localchainai" className="text-body-sm text-text-secondary hover:text-text-primary transition-colors">
               GitHub
             </a>
           </nav>
@@ -108,12 +108,12 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-label-xs text-text-tertiary">
-            © {currentYear} Sequencer. Local-first. Developer-built.
-          </p>
-          <p className="text-label-xs text-text-tertiary">
-            Chat with AI for a fix. Sequence with AI for a workflow.
-          </p>
+            <p className="text-label-xs text-text-tertiary">
+              © {currentYear} LocalChain AI. Local-first. Developer-built.
+            </p>
+            <p className="text-label-xs text-text-tertiary">
+              Don't just chat with AI. Deploy AI.
+            </p>
         </div>
       </div>
     </footer>

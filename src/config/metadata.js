@@ -1,31 +1,27 @@
 /**
- * SEO Metadata Configuration for Sequencer Splash Page
+ * SEO Metadata Configuration for LocalChain AI Splash Page
  *
  * Centralized metadata object for dynamic meta tags.
  * Used with react-helmet-async to inject SEO tags at runtime.
  */
 
-const siteUrl = 'https://sequencer.dev';
+const siteUrl = 'https://localchain.ai';
 const ogImage = `${siteUrl}/og-image.png`;
 
 export const metadata = {
   // Primary SEO fields
-  title: 'Sequencer | Automate Your AI Workflow & Reclaim Your Time',
+  title: 'LocalChain AI | Local-First Visual Workflow Orchestrator',
   description:
-    'Stop chatting, start living. Build autonomous, local-first AI agent pipelines that handle the heavy lifting so you can step away from the screen.',
+    'Build autonomous, local-first AI workflows with visual chain builder. Run parallel AI pipelines using local LLMs — open-source and developer-friendly.',
 
   // Keywords for search engines
   keywords: [
-    'AI agent orchestrator',
+    'local-first AI workflow orchestrator',
+    'visual workflow chains',
     'local LLM',
-    'workflow automation',
-    'prompt chaining',
-    'Cline',
-    'Aider',
-    'local-first AI',
-    'visual workflow',
-    'Sequencer',
-    'AI pipeline',
+    'parallel AI workflows',
+    'open-source AI orchestration',
+    'LocalChain AI',
   ].join(', '),
 
   // Canonical URL
@@ -33,21 +29,21 @@ export const metadata = {
 
   // OpenGraph (Facebook / LinkedIn)
   og: {
-    title: 'Sequencer | Automate Your AI Workflow & Reclaim Your Time',
+    title: 'LocalChain AI | Local-First Visual Workflow Orchestrator',
     description:
-      'Stop chatting, start living. Build autonomous, local-first AI agent pipelines that handle the heavy lifting so you can step away from the screen.',
+      'Build autonomous, local-first AI workflows with visual chain builder. Run parallel AI pipelines using local LLMs — open-source and developer-friendly.',
     image: ogImage,
     url: siteUrl,
     type: 'website',
-    siteName: 'Sequencer',
+    siteName: 'LocalChain AI',
   },
 
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'Sequencer | Automate Your AI Workflow & Reclaim Your Time',
+    title: 'LocalChain AI | Local-First Visual Workflow Orchestrator',
     description:
-      'Stop chatting, start living. Build autonomous, local-first AI agent pipelines that handle the heavy lifting so you can step away from the screen.',
+      'Build autonomous, local-first AI workflows with visual chain builder. Run parallel AI pipelines using local LLMs — open-source and developer-friendly.',
     image: ogImage,
     site: '@micdoty',
     creator: '@micdoty',
@@ -55,7 +51,7 @@ export const metadata = {
 
   // Additional SEO signals
   robots: 'index, follow',
-  author: 'Sequencer Team',
+  author: 'LocalChain AI Team',
   themeColor: '#8B5CF6',
 
   // JSON-LD Structured Data (Schema.org)
@@ -63,9 +59,9 @@ export const metadata = {
     softwareApplication: {
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
-      name: 'Sequencer',
+      name: 'LocalChain AI',
       description:
-        'Build autonomous, local-first AI agent pipelines that work while you don\'t. Set it up, step away, and reclaim your time.',
+        'Build autonomous, local-first AI workflows with visual chain builder. Run parallel AI pipelines using local LLMs — open-source and developer-friendly.',
       operatingSystem: 'macOS',
       applicationCategory: 'DeveloperApplication',
       url: siteUrl,
@@ -76,7 +72,7 @@ export const metadata = {
       },
       author: {
         '@type': 'Organization',
-        name: 'Sequencer Team',
+        name: 'LocalChain AI Team',
         url: siteUrl,
       },
     },

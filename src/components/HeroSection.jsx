@@ -7,9 +7,9 @@ const RUNNING = 'running';
 const DONE = 'done';
 
 const pipelineTasks = [
-  { id: 1, name: 'Design', icon: 'design' },
-  { id: 2, name: 'Assign', icon: 'assign' },
-  { id: 3, name: 'Execute', icon: 'execute' },
+  { id: 1, name: 'Model', icon: 'model' },
+  { id: 2, name: 'Agent', icon: 'agent' },
+  { id: 3, name: 'Script', icon: 'script' },
 ];
 
 // Status badge component with animation
@@ -38,14 +38,14 @@ function StatusBadge({ status }) {
 // Single pipeline node
 function PipelineNode({ task, status, isActive }) {
   const iconMap = {
-    design: (
+    model: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-accent">
         <rect x="2" y="2" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="1.5"/>
         <path d="M7 10H13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
         <path d="M10 7V13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
-    assign: (
+    agent: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-teal">
         <circle cx="10" cy="7" r="3" stroke="currentColor" strokeWidth="1.5"/>
         <circle cx="5" cy="15" r="2.5" stroke="currentColor" strokeWidth="1.5"/>
@@ -53,8 +53,8 @@ function PipelineNode({ task, status, isActive }) {
         <path d="M8.5 9L6 13M11.5 9L14 13" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
       </svg>
     ),
-    execute: (
-      <img src="/logo.png" alt="Execute" className="h-5 w-5" />
+    script: (
+      <img src="/logo.png" alt="Script" className="h-5 w-5" />
     ),
   };
 
@@ -86,7 +86,7 @@ function PipelineNode({ task, status, isActive }) {
       >
         {iconMap[task.icon]}
       </motion.div>
-      <p className="text-label-xs text-text-tertiary uppercase tracking-wider mb-1">Agent</p>
+      <p className="text-label-xs text-text-tertiary uppercase tracking-wider mb-1">Node</p>
       <p className="text-body-sm text-text-primary font-medium">{task.name}</p>
       <div className="mt-3 flex justify-center">
         <StatusBadge status={status} />
@@ -206,7 +206,7 @@ export function HeroSection() {
             >
               <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
               <span className="text-label-xs text-text-secondary uppercase tracking-widest">
-                macOS Beta &middot; Cross-platform soon
+                Open-Source &middot; Local-First
               </span>
             </motion.div>
 
@@ -216,13 +216,13 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-hero-xl text-text-primary mb-6"
-              >
-                Sequencer:
-                <br />
-               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-accent-light to-teal">
-                 Set it. Forget it. Live it.
-               </span>
-             </motion.h1>
+            >
+              LocalChain AI:
+              <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-accent-light to-teal">
+                Local-first orchestration for parallel AI workflow chains.
+              </span>
+            </motion.h1>
 
             {/* Subheadline */}
             <motion.p
@@ -231,8 +231,8 @@ export function HeroSection() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-body-base text-text-secondary mb-8 max-w-lg"
             >
-              AI coding used to mean being tethered to a chatbot. Real engineering means building a pipeline that works while you don't.
-              Sequencer turns your AI workflow into an autonomous assembly line&mdash;so you can set it up, step away, and get your life back.
+              Chain together local LLMs, frontier models, agents, tools, and scripts into composable workflow chains.
+              LocalChain AI orchestrates them in parallel—so your data stays yours, and your pipeline never sleeps.
             </motion.p>
 
             {/* CTAs */}
@@ -248,7 +248,7 @@ export function HeroSection() {
                   <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
-              <a href="https://github.com/mdoty4/sequencer" className="btn-secondary">
+              <a href="https://github.com/mdoty4/localchainai" className="btn-secondary">
                 <svg className="mr-2 w-4 h-4" viewBox="0 0 16 16" fill="currentColor">
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
@@ -288,7 +288,7 @@ export function HeroSection() {
             <div
               className="relative card p-6 space-y-4"
               role="img"
-              aria-label="Visual AI pipeline editor for multi-agent coordination: three-node workflow showing Design, Assign, and Execute agents with animated status badges transitioning from Pending to Running to Done"
+              aria-label="Visual AI workflow editor for parallel pipeline orchestration: three-node workflow showing Model, Agent, and Script nodes with animated status badges transitioning from Pending to Running to Done"
             >
               {/* Window chrome */}
               <div className="flex items-center justify-between mb-4">
@@ -296,7 +296,7 @@ export function HeroSection() {
                   <span className="w-3 h-3 rounded-full bg-error/70" />
                   <span className="w-3 h-3 rounded-full bg-warning/70" />
                   <span className="w-3 h-3 rounded-full bg-success/70" />
-                  <span className="ml-3 text-label-xs text-text-tertiary font-mono">sequencer.canvas</span>
+                  <span className="ml-3 text-label-xs text-text-tertiary font-mono">localchain.canvas</span>
                 </div>
                 {/* Replay button */}
                 <button
@@ -368,7 +368,7 @@ function HeroInstallationSnippet() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('git clone https://github.com/mdoty4/sequencer.git && cd sequencer && npm install');
+    navigator.clipboard.writeText('git clone https://github.com/mdoty4/localchainai.git && cd localchainai && npm install');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -377,7 +377,7 @@ function HeroInstallationSnippet() {
     <div className="inline-flex items-center gap-3 bg-background-secondary border border-border rounded-code px-4 py-3 shadow-code-block group">
       <span className="text-teal text-code-xs font-mono">$</span>
       <code className="text-text-primary text-code-xs font-mono">
-        git clone https://github.com/mdoty4/sequencer.git && cd sequencer && npm install
+        git clone https://github.com/mdoty4/localchainai.git && cd localchainai && npm install
       </code>
       <motion.button
         whileHover={{ scale: 1.1 }}

@@ -26,7 +26,7 @@ export function VideoTutorials() {
           <header className="section-header">
             <h2 id="tutorials-heading">Watch It in Action</h2>
             <p className="max-w-xl mx-auto">
-              See how Sequencer turns complex AI workflows into visual pipelines — from first install to running your first sequence.
+              See how visual AI pipelines turn complex workflows into an assembly line — from first install to running your first sequence.
             </p>
           </header>
         </ScrollReveal>

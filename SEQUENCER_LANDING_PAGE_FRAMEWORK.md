@@ -1,4 +1,4 @@
-# Sequencer — Landing Page Copywriting Framework
+# LocalChain AI — Landing Page Copywriting Framework
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## 1. Navigation Bar
 
-**Logo:** `Sequencer`
+**Logo:** `LocalChain AI`
 
 **Links:**
 - Features
@@ -38,7 +38,7 @@
 
 ### Subheadline
 
-> AI coding used to mean talking to a chatbot. Real engineering means building a pipeline. Sequencer turns your AI workflow from a conversation into an assembly line — so every prompt, every agent, and every task runs in lockstep.
+> AI coding used to mean talking to a chatbot. Real engineering means building a pipeline. LocalChain AI turns your AI workflow from a conversation into an assembly line — so every prompt, every agent, and every task runs in lockstep.
 
 ### Primary CTA
 
@@ -50,7 +50,7 @@
 
 ### Supporting Visual Note
 
-> [Hero mockup: A visual of the Sequencer canvas showing a multi-node workflow graph with agents connected by directed edges, running locally on a macOS desktop.]
+> [Hero mockup: A visual of the LocalChain AI canvas showing a multi-node workflow graph with agents connected by directed edges, running locally on a macOS desktop.]
 
 ---
 
@@ -58,7 +58,7 @@
 
 ### Section Heading
 
-> **Why Sequencer?**
+> **Why LocalChain AI?**
 
 ### Pillar 1 — Visual Orchestration
 
@@ -76,7 +76,7 @@
 
 **Title:** Many Agents. One Pipeline.
 
-**Body:** Assign different models to different stages. Let one agent write tests, another refactor code, a third review diffs. Sequencer handles the routing, synchronization, and handoffs — so your agents work like a team, not a tug-of-war.
+**Body:** Assign different models to different stages. Let one agent write tests, another refactor code, a third review diffs. LocalChain AI handles the routing, synchronization, and handoffs — so your agents work like a team, not a tug-of-war.
 
 ---
 
@@ -86,7 +86,7 @@
 
 **Title:** Your Code Stays Yours
 
-**Body:** Sequencer runs on your machine. Your codebase, your prompts, your agent outputs — none of it leaves your control. Connect to remote models when you choose, but the orchestrator is always local. Always yours.
+**Body:** LocalChain AI runs on your machine. Your codebase, your prompts, your agent outputs — none of it leaves your control. Connect to remote models when you choose, but the orchestrator is always local. Always yours.
 
 ---
 
@@ -132,7 +132,7 @@
 
 > **Built for macOS. Expanding Everywhere.**
 
-Sequencer is currently optimized for macOS. Cross-platform support for Windows and Linux is on the horizon — so no matter your stack, you'll soon be able to sequence on it.
+LocalChain AI is currently optimized for macOS. Cross-platform support for Windows and Linux is on the horizon — so no matter your stack, you'll soon be able to sequence on it.
 
 ---
 
@@ -159,7 +159,7 @@ Sequencer is currently optimized for macOS. Cross-platform support for Windows a
 ## 7. Footer
 
 **Left Column:**
-- **Sequencer**
+- **LocalChain AI**
 - Local-First AI Agent Workflow Orchestrator
 
 **Center Column:**
@@ -174,7 +174,7 @@ Sequencer is currently optimized for macOS. Cross-platform support for Windows a
 - [Discord Icon Link]
 
 **Bottom Bar:**
-- © 2025 Sequencer. Local-first. Developer-built.
+- © 2025 LocalChain AI. Local-first. Developer-built.
 
 ---
 
@@ -182,7 +182,7 @@ Sequencer is currently optimized for macOS. Cross-platform support for Windows a
 
 | Principle | Direction |
 |---|---|
-| **Confident, never arrogant** | State what Sequencer does without hype or hyperbole |
+| **Confident, never arrogant** | State what LocalChain AI does without hype or hyperbole |
 | **Developer-to-developer** | Write like you've shipped code. Assume technical literacy. |
 | **Action-oriented** | Use verbs: Design. Assign. Run. Sequence. Orchestrate. |
 | **Contrast-driven** | Always frame the shift: Chat → Sequence. Linear → Pipeline. Chatbot → Assembly Line. |
