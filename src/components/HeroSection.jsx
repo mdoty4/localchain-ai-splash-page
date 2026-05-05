@@ -242,7 +242,7 @@ export function HeroSection() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="flex flex-wrap items-center gap-4 mb-10"
             >
-              <a href="#get-started" className="btn-primary">
+              <a href="https://github.com/mdoty4/localchainai" className="btn-primary">
                 Get Started
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
